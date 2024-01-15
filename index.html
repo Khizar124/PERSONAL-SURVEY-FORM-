@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8>
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Feedback Survey</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<div class="container">
+<body>
+<div class="header">
+<h1 id="title">Understanding my Interactions: A Personal Feedback Survey
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet"></h1>
+<div class="description">
+<p id="description">Hi, I'm khizar. Thank you for taking the time to participate in this survey. Your feedback is incredibly important to me as I seek to understand how I am perceived by those around me. Your honest responses will contribute significantly to my personal growth journey.
+</p>
+</div>
+</div>
+<form id="survey-form">
+
+<H2>Basic Information</h2>
+
+<div class="form-group">
+<label for="Name">Name</label>
+<input id="Name" type="text" placeholder="Enter Your Name" class="form-control" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email <span class="clue">(optional)</span></label>
+<input id="email" type="email" name="email" placeholder="Enter Your Email" class="form-control">
+</div>
+
+<div class="form-group">
+<label for="Age">Age <span class="clue">(optional)</span></label>
+<input id="Age" type="number" name="age" placeholder="Age" min="13" max="99" class="form-control">
+</div>
+
+<div class="form-group">
+<label id="Gender">Gender</label>
+<select class="form-control">
+<option value="">(Select Gender)</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Non-binary">Non-binary</option>
+<option value="Prefer not to say">Prefer not to Say</option>
+</select>
+</div>
+
+<div class="form-group">
+<label id="Relationship" required>Relationship to me</label>
+<select class="form-control">
+<option value="">(Select one)</option>
+<option value="Friend">Friend</option>
+<option value="Family Member">Family Member</option>
+<option value="Colleague">Colleague</option>
+<option value="Classmate">Classmate</option>
+<option value="Acquaintance">Acquaintance</option>
+<option value="Other">Other</option>
+</select>
+</div>
+
+<H2>Personality Traits</h2>
+
+<div class="form-group">
+<label for="Personality-description" required>How would you describe my personality in a few words?</label>
+<textarea Id="Personality-description" placeholder="Write down the Personality Description here..." rows="2" Cols="45" class="Input-textarea"></textarea>
+</div>
+
+
+<div class="checkbox-container">
+    <label for="Resilience">What do you think are my strengths?</label>
+   
+     <div class="checkbox-item">
+        <input type="checkbox" id="Resilience" name="Resilience">
+        <label for="Resilience">Resilience</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Empathy" name="Empathy">
+        <label for="Empathy">Empathy</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Adaptability" name="Adaptability">
+        <label for="Adaptability">Adaptability</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="integrity" name="integrity">
+        <label for="integrity">Integrity</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Optimism" name="Optimism">
+        <label for="Optimism">Optimism</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Courage" name="Courage">
+        <label for="Courage">Courage</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Creativity" name="Creativity">
+        <label for="Creativity">Creativity</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Patience" name="Patience">
+        <label for="Patience">Patience</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Self-dicipline" name="Self-dicipline">
+        <label for="Self-dicipline">Self-dicipline</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Confidence" name="Confidence">
+        <label for="Confidence">Confidence</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Good-communication" name="Good-communication">
+        <label for="Good-communication">Good-communication</label>
+    </div>
+</div>
+
+
+<div class="checkbox-container">
+<label for="Areas-to-improve">What areas do you think I could improve opon?</label>
+
+   
+     <div class="checkbox-item">
+        <input type="checkbox" id="Communication-skills" name="Communication skills">
+        <label for="Communication skills">Communication skills</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Time-management" name="Time management">
+        <label for="Time management">Time management</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Patience" name="Patience">
+        <label for="Patience">Patience</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Active-listening" name="Active listening">
+        <label for="Active listening">Active listening</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Empathy" name="Empathy">
+        <label for="Empathy">Empathy</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Confidence" name="Confidence">
+        <label for="Confidence">Confidence</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Conflict-resolution" name="Conflict resolution">
+        <label for="Conflict resolution">Conflict resolution</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Stress-management" name="Stress management">
+        <label for="Stress management">Stress management</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Decision-making" name="Decision-making">
+        <label for="Decision-making">Decision-making</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Accepting-feedback" name="Accepting feedback">
+        <label for="Accepting feedback">Accepting feedback</label>
+    </div>
+    <div class="checkbox-item">
+        <input type="checkbox" id="Open-mindedness" name="Open-mindedness">
+        <label for="Open-mindedness">Open-mindedness</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Team-collaboration" name="Team collaboration">
+        <label for="Team collaboration">Team collaboration</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Emotional-intelligence" name="Emotional intelligence">
+        <label for="Emotional intelligence">Emotional intelligence</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Adaptability" name="Adaptability">
+        <label for="Adaptability">Adaptability</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Setting-boundaries" name="Setting boundaries">
+        <label for="Setting boundaries">Setting boundaries</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Self-awareness" name="Self-awareness">
+        <label for="Self-awareness">Self-awareness</label>
+    </div>
+
+ <div class="checkbox-item">
+        <input type="checkbox" id="Work-life balance" name="Work-life balance">
+        <label for="Work-life balance">Work-life balance</label>
+    </div>
+
+</div>
+
+
+
+<h2>Communication and Interaction</h2>
+
+<div class="form-group">
+<label id="Communication-skills-rating">How would you rate my communication skills?</label>
+<select class="form-control" >
+<option value="">(select one)</option>
+<option value="Poor">Poor</option>
+<option value="Average">Average</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="Interaction-feel">How do you feel when you interact with me?</label>
+
+<select class="form-control" >
+<option value="">(select one)</option>
+<option value="Inspired">Inspired</option>
+<option value="Anxious">Anxious</option>
+<option value="Excited">Excited</option>
+<option value="Bored">Bored</option>
+<option value="Relaxed">Relaxed</option>
+<option value="Stressed">Stressed</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Good listener">Do you find me a good listener?</label>
+
+<select class="form-control" >
+<option value="">(select one)</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+<option value="Sometimes">Sometimes</option>
+</select>
+</div>
+
+<h2>Social Interactions</h2>
+
+<div class="form-group">
+<label for="Social-skills-perceiving">How do you perceive my social skills in group settings?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Excellent">Excellent</option>
+<option value="Good">Good</option>
+<option value="Average">Average</option>
+<option value="Needs-improvement">Needs Improvement</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Social-skills-perceiving">Do you think I make an effort to connect with others?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Always">Always</option>
+<option value="Often">Often</option>
+<option value="Occasionally">Occasionally</option>
+<option value="Rarely">Rarely</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Challenging-Social-Situations">How do I handle new or challenging social situations?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Very-well">Very well</option>
+<option value="well">Well</option>
+<option value="Average">Average</option>
+<option value="Not-well">Not well</option>
+</select>
+</div>
+
+<h2>Emotional Intelligence</h2>
+
+<div class="form-group">
+<label for="Understanding-others-emotions">How well do you think I understand others' emotions?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Very-well">Very well</option>
+<option value="Well">Well</option>
+<option value="Average">Average</option>
+<option value="Not-very-well">Not very well</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="Emotional-concerns">How do I respond to your emotional needs or concerns?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Supportive">Supportive</option>
+<option value="Indifferent">Indifferent</option>
+<option value="Insensitive">Insensitive</option>
+<option value="Confused">Confused</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Empathetic-and-Supportive">Do you find me empathetic and supportive?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Yes-very-much">Yes, very much</option>
+<option value="Somewhat">Somewhat</option>
+<option value="Not-really">Not really</option>
+<option value="Not-at-all">Not at all</option>
+</select>
+</div>
+
+<h2>Work and Collaboration</h2>
+
+<div class="form-group">
+<label for="Empathetic-and-Supportive">How do I collaborate with others in a team or work setting?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Yes-effecticlvely">Very effectively</option>
+<option value="Effectively">Effectively</option>
+<option value="Somewhat-effectively">Somewhat effectively</option>
+<option value="Ineffectively">Ineffectively</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Handling-stress">Do you think I handle stress well in professional environments?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Very-well">Very well</option>
+<option value="Well">Well</option>
+<option value="Average">Average</option>
+<option value="Not-well">Not well</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="Rating-problem-solving">How would you rate my problem-solving skills?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Excellent">Excellent</option>
+<option value="Good">Good</option>
+<option value="Average">Average</option>
+<option value="Needs-improvement">Needs improvement</option>
+</select>
+</div>
+
+<h2>Conflict Resolution</h2>
+
+<div class="form-group">
+<label for="Witnessing-conflict-resolution">Have you ever witnessed me resolving a conflict? How effective was I?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Yes-very-effectively">Yes, very effectively</option>
+<option value="Yes-effecticlvely">Yes, effectively</option>
+<option value="Yes-somewhat-effectively">Yes, somewhat effectively</option>
+<option value="No-i-haven't-observed">No, I haven't observed</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="being-approachable">How approachable do you think I am when someone has an issue with me?</label>
+
+<select class="form-control">
+<option value="">(select one)</option>
+<option value="Very-approachable">Very approachable</option>
+<option value="Approachable">Approachable</option>
+<option value="Somewhat-approachable">Somewhat approachable</option>
+<option value="Not-approachable">Not approachable</option>
+</select>
+</div>
+
+<H2>Feedback and Improvement</h2>
+
+<div class="form-group">
+<label for="specific-incident" required>Is there any specific incident where you think I handled things exceptionally well or poorly? Please describe.</label>
+<textarea Id="specific-incident" placeholder="Write down the specific incident here..." rows="2" Cols="45" class="Input-textarea"></textarea>
+</div>
+
+<div class="form-group">
+<label for="advice-or-suggestions" required>What advice or suggestions do you have for me to improve my interactions with others?</label>
+<textarea Id="advice-or-suggestions" placeholder="Write down the advice or suggestions here..." rows="2" Cols="45" class="Input-textarea"></textarea>
+</div>
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
+
