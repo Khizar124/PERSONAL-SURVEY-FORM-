@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Feedback Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Feedback on My Personality</h1>
+            <p>Thank you for taking the time to provide feedback on my personality. Your honest thoughts are incredibly valuable to me for self-improvement. Please answer the questions as candidly as possible. All information you provide in the 'About You' section is optional and will be kept confidential.</p>
+        </header>
+
+        <form id="personalitySurvey">
+            <section id="aboutYou">
+                <h2>About You (Optional)</h2>
+                <div class="question">
+                    <label for="q_name">1. Your Name:</label>
+                    <input type="text" id="q_name" name="q_name">
+                </div>
+                <div class="question">
+                    <label for="q_relationship">2. How do you know me?</label>
+                    <select id="q_relationship" name="q_relationship">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Family Member">Family Member</option>
+                        <option value="Colleague">Colleague / Work associate</option>
+                        <option value="Acquaintance">Acquaintance</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="q_relationship_other" class="other-label">If Other, please specify:</label>
+                    <input type="text" id="q_relationship_other" name="q_relationship_other" class="other-input">
+                </div>
+                <div class="question">
+                    <label for="q_known_duration">3. How long have you known me?</label>
+                    <select id="q_known_duration" name="q_known_duration">
+                        <option value="">--Please choose an option--</option>
+                        <option value="<6 months">Less than 6 months</option>
+                        <option value="6m-1y">6 months to 1 year</option>
+                        <option value="1-3y">1-3 years</option>
+                        <option value="3-5y">3-5 years</option>
+                        <option value=">5y">More than 5 years</option>
+                    </select>
+                </div>
+            </section>
+
+            <section id="personalityFeedback">
+                <h2>Personality Feedback</h2>
+
+                <fieldset>
+                    <legend>Communication Style</legend>
+                    <div class="question">
+                        <label for="q_comm_style">4. How would you describe my typical communication style?</label>
+                        <select id="q_comm_style" name="q_comm_style">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Clear and concise">Clear and concise</option>
+                            <option value="Detailed and explanatory">Detailed and explanatory</option>
+                            <option value="Friendly and approachable">Friendly and approachable</option>
+                            <option value="Direct and to-the-point">Direct and to-the-point</option>
+                            <option value="Reserved or quiet">Reserved or quiet</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <label for="q_comm_style_other" class="other-label">If Other, please specify:</label>
+                        <input type="text" id="q_comm_style_other" name="q_comm_style_other" class="other-input">
+                    </div>
+                    <div class="question">
+                        <label for="q_good_listener">5. On a scale of 1 (Not at all) to 5 (Very much so), do you feel I am a good listener?</label>
+                        <input type="range" id="q_good_listener" name="q_good_listener" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                        <output>3</output>
+                    </div>
+                    <div class="question">
+                        <label>6. Do I generally express my thoughts and opinions clearly?</label>
+                        <input type="radio" id="q_express_clearly_yes" name="q_express_clearly" value="Yes"><label for="q_express_clearly_yes">Yes</label>
+                        <input type="radio" id="q_express_clearly_no" name="q_express_clearly" value="No"><label for="q_express_clearly_no">No</label>
+                    </div>
+                    <div class="question">
+                        <label for="q_improve_comm">7. Is there anything I could do to improve how I communicate?</label>
+                        <textarea id="q_improve_comm" name="q_improve_comm" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interactions & Approachability</legend>
+                    <div class="question">
+                        <label for="q_approachable">8. On a scale of 1 (Very Unapproachable) to 5 (Very Approachable), how approachable do you find me?</label>
+                        <input type="range" id="q_approachable" name="q_approachable" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                        <output>3</output>
+                    </div>
+                    <div class="question">
+                        <label for="q_comfort_sharing">9. How comfortable do you feel sharing your honest thoughts or concerns with me?</label>
+                        <select id="q_comfort_sharing" name="q_comfort_sharing">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Very comfortable">Very comfortable</option>
+                            <option value="Comfortable">Comfortable</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Uncomfortable">Uncomfortable</option>
+                            <option value="Very uncomfortable">Very uncomfortable</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label>10. Do you find me generally respectful of others' opinions, even when they differ from my own?</label>
+                        <input type="radio" id="q_respectful_opinions_yes" name="q_respectful_opinions" value="Yes"><label for="q_respectful_opinions_yes">Yes</label>
+                        <input type="radio" id="q_respectful_opinions_no" name="q_respectful_opinions" value="No"><label for="q_respectful_opinions_no">No</label>
+                    </div>
+                    <div class="question">
+                        <label for="q_social_style">11. In social settings, I am usually:</label>
+                        <select id="q_social_style" name="q_social_style">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Outgoing and talkative">Outgoing and talkative</option>
+                            <option value="Quiet and observant">Quiet and observant</option>
+                            <option value="A good balance of both">A good balance of both</option>
+                            <option value="It depends on the situation">It depends on the situation</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q_interaction_word">12. What is one word you would use to describe how I interact with others?</label>
+                        <input type="text" id="q_interaction_word" name="q_interaction_word">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>General Demeanor & Traits</legend>
+                    <div class="question">
+                        <label for="q_patience">13. On a scale of 1 (Not at all) to 5 (Very much so), how patient do you perceive me to be?</label>
+                        <input type="range" id="q_patience" name="q_patience" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                        <output>3</output>
+                    </div>
+                    <div class="question">
+                        <label for="q_outlook">14. Would you describe me as generally optimistic, pessimistic, or realistic?</label>
+                        <select id="q_outlook" name="q_outlook">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Optimistic">Optimistic</option>
+                            <option value="Pessimistic">Pessimistic</option>
+                            <option value="Realistic">Realistic</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label>15. Do you see me as someone who is generally open to new ideas and experiences?</label>
+                        <input type="radio" id="q_open_ideas_yes" name="q_open_ideas" value="Yes"><label for="q_open_ideas_yes">Yes</label>
+                        <input type="radio" id="q_open_ideas_no" name="q_open_ideas" value="No"><label for="q_open_ideas_no">No</label>
+                    </div>
+                    <div class="question">
+                        <label for="q_handle_stress">16. How well do you think I handle stress or pressure?</label>
+                        <select id="q_handle_stress" name="q_handle_stress">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Very well">Very well</option>
+                            <option value="Well">Well</option>
+                            <option value="Okay">Okay</option>
+                            <option value="Not very well">Not very well</option>
+                            <option value="Poorly">Poorly</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q_three_words">17. What are three words that you think best describe my personality?</label>
+                        <input type="text" id="q_three_words1" name="q_three_words1" placeholder="Word 1">
+                        <input type="text" id="q_three_words2" name="q_three_words2" placeholder="Word 2">
+                        <input type="text" id="q_three_words3" name="q_three_words3" placeholder="Word 3">
+                    </div>
+                    <div class="question">
+                        <label>18. Do you find me to be a reliable person?</label>
+                        <input type="radio" id="q_reliable_yes" name="q_reliable" value="Yes"><label for="q_reliable_yes">Yes</label>
+                        <input type="radio" id="q_reliable_no" name="q_reliable" value="No"><label for="q_reliable_no">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Strengths & Areas for Growth</legend>
+                    <div class="question">
+                        <label for="q_biggest_strength">19. What do you consider to be one of my biggest strengths?</label>
+                        <textarea id="q_biggest_strength" name="q_biggest_strength" rows="3"></textarea>
+                    </div>
+                    <div class="question">
+                        <label for="q_growth_area">20. What is one area where you think I could focus on for personal growth?</label>
+                        <textarea id="q_growth_area" name="q_growth_area" rows="3"></textarea>
+                    </div>
+                    <div class="question">
+                        <label for="q_supportive">21. On a scale of 1 (Not at all supportive) to 5 (Very supportive), how supportive do you find me to be of others?</label>
+                        <input type="range" id="q_supportive" name="q_supportive" min="1" max="5" step="1" oninput="this.nextElementSibling.value = this.value">
+                        <output>3</output>
+                    </div>
+                    <div class="question">
+                        <label>22. Do I generally seem confident in myself?</label>
+                        <input type="radio" id="q_self_confident_yes" name="q_self_confident" value="Yes"><label for="q_self_confident_yes">Yes</label>
+                        <input type="radio" id="q_self_confident_no" name="q_self_confident" value="No"><label for="q_self_confident_no">No</label>
+                    </div>
+                    <div class="question">
+                        <label for="q_shine_struggle">23. Is there any specific situation or type of interaction where you've noticed I particularly shine or struggle?</label>
+                        <textarea id="q_shine_struggle" name="q_shine_struggle" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Overall Impression</legend>
+                    <div class="question">
+                        <label for="q_overall_impression">24. Overall, how would you rate your general impression of my personality?</label>
+                        <select id="q_overall_impression" name="q_overall_impression">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Very Positive">Very Positive</option>
+                            <option value="Positive">Positive</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Negative">Negative</option>
+                            <option value="Very Negative">Very Negative</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q_additional_feedback">25. Is there any other feedback or anything else you'd like to share about my personality?</label>
+                        <textarea id="q_additional_feedback" name="q_additional_feedback" rows="4"></textarea>
+                    </div>
+                </fieldset>
+            </section>
+
+            <button type="submit">Submit Feedback</button>
+            <button type="button" id="downloadAnswers">Download Answers as JSON</button>
+        </form>
+
+        <div id="resultsArea" style="display:none;">
+            <h2>Submitted Answers:</h2>
+            <pre id="resultsJson"></pre>
+        </div>
+
+        <footer>
+            <p>Thank you again for your time and valuable feedback! I truly appreciate you helping me in my journey of self-improvement.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
